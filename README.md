@@ -9,6 +9,7 @@ The original demand forecasting pipeline depended on Spotify data. This project 
 ## Pipeline
 
 Data Source
+
 ↓
 
 Validation
