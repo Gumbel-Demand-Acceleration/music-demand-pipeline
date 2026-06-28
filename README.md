@@ -1,3 +1,6 @@
+# music-demand-pipeline
+A provider-agnostic data preprocessing pipeline that converts heterogeneous music demand datasets into standardized inputs for downstream machine learning models.
+
 ## Current Status
 
 This project currently converts canonical song-country-week demand data into fixed-length weekly demand vectors.
