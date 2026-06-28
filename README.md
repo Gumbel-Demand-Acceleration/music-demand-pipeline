@@ -1,18 +1,46 @@
-# music-demand-pipeline
-A provider-agnostic data preprocessing pipeline that converts heterogeneous music demand datasets into standardized inputs for downstream machine learning models.
+# Music Demand Pipeline
 
-## Current Status
+A provider-agnostic data preprocessing pipeline for music demand forecasting research.
 
-This project currently converts canonical song-country-week demand data into fixed-length weekly demand vectors.
+## Motivation
 
-Current pipeline:
+The original demand forecasting pipeline depended on Spotify data. This project decouples data ingestion from downstream machine learning by converting heterogeneous music popularity sources into a common canonical schema.
 
-- Load raw demand data
-- Validate canonical schema
-- Build 26-week demand vectors
-- Save model-ready parquet output
+## Pipeline
 
-Next milestone:
+Data Source
+↓
 
-- Add Soundcharts loader once provider data is available
-- Add B-spline label generation compatible with the existing sound-wave model
+Validation
+
+↓
+
+Canonical Schema
+
+↓
+
+Weekly Demand Vectors
+
+↓
+
+Spline Labels
+
+↓
+
+Forecasting Model
+
+## Current Features
+
+- Canonical demand schema
+- Data validation
+- Weekly demand vector generation
+- Config-driven preprocessing
+
+## Planned Features
+
+- Soundcharts loader
+- Multiple provider support
+- Automated testing
+- Logging
+- CI/CD
+- Benchmark suite
